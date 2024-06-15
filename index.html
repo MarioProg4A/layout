@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+      
+        body {
+            background-image: url('https://w0.peakpx.com/wallpaper/213/730/HD-wallpaper-halo-halo-4-master-chief.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+        }
+
+       
+        #login-form {
+            width: 300px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6); 
+            border-radius: 8px;
+            margin: 100px auto; 
+            text-align: center; 
+        }
+
+        #login-form h1 {
+            margin-bottom: 20px;
+        }
+
+        #login-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        #login-form input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        #login-form button {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        #login-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="login-form">
+        <h1>Iniciar sesión</h1>
+        <form>
+            <div>
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Iniciar sesión</button>
+            <p id="error-message" style="color: red;"></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
